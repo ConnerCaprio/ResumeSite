@@ -1,0 +1,14 @@
+<div class="row" [ngClass]="{
+    'first': one,
+    'second': two,
+    'third': three,
+    'fourth': four,
+    'fifth': five
+  }">
+  <div class="col-md-4 ">
+    <app-resume-page-title [assignRow]="row"></app-resume-page-title>
+  </div>
+  <div class="col-md-8 ">
+    <app-resume-page-info [assignRow]="row"></app-resume-page-info>
+  </div>
+</div>

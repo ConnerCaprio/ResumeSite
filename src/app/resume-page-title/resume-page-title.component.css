@@ -1,0 +1,11 @@
+.profilePic {
+  width: 300px;
+  height: auto;
+}
+
+.marginSides {
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}

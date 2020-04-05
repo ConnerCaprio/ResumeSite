@@ -1,0 +1,23 @@
+<!-- <input type="text" class="form-control" [(ngModel)]="searchName"> -->
+<input type="text" class="form-control" (input)="onUpdateServerName($event)" placeholder="Filter Languages"
+    style="margin-top: 2%; width: 35%; margin-left: 5%;">
+<div class="row" style="margin-left: 5%; margin-bottom: 6%;">
+    <table style="width: 35%; float: left;">
+        <thead>
+            <th>Language Name</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let language of languagesOne">
+                <td *ngIf="language.search">{{language.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <table style="width: 35%; float: left; padding-left: 4%; margin-left: 5%;">
+        <br>
+        <tbody>
+            <tr *ngFor="let language of languagesTwo">
+                <td *ngIf="language.search">{{language.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
