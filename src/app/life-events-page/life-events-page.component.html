@@ -1,18 +1,20 @@
 <div>
     <div class="row">
-        <div class="col-md-12 page" style="padding-top: 2%;">
+        <div class="col-md-12 page" style="padding-top: 1%;">
             <div class="page-header">
                 <h1>Conner's Live Events to view....creep</h1>
             </div>
             <!-- <div style="display:inline-block;width:100%;overflow-y:auto;"> -->
-            <div style="display:inline-block;width:100%; padding-top: 10%;">
+            <div style="display:inline-block;width:100%; padding-top: 3%;">
                 <ul class="timeline timeline-horizontal">
                     <li class="timeline-item">
                         <div class="timeline-badge primary"><i class="fa fa-birthday-cake glyphicon-user"></i></div>
-                        <div class="timeline-panel">
+                        <div class="timeline-panel profilePic">
                             <div class="timeline-heading">
-                                <h4 class="timeline-title">Born</h4>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> March 11,
+                                <h4 id="born" class="timeline-title" (mouseover)="eventhandler($event)"
+                                    (mouseout)="handleLeave($event)">Born</h4>
+                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i><i
+                                            class="far fa-calendar-alt"></i> March 11,
                                         1997</small></p>
                             </div>
                             <div class="timeline-body">
@@ -22,10 +24,11 @@
                     </li>
                     <li class="timeline-item">
                         <div class="timeline-badge warning"><i class="fa fa-umbrella-beach"></i></div>
-                        <div class="timeline-panel">
+                        <div class="timeline-panel profilePic">
                             <div class="timeline-heading">
-                                <h4 class="timeline-title">Moved to Florida</h4>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>January
+                                <h4 class="timeline-title" (mouseover)="eventhandler($event)"
+                                    (mouseout)="handleLeave($event)" id="moved">Moved to Florida</h4>
+                                <p><small class="text-muted"><i class="far fa-calendar-alt"></i> January
                                         2000</small></p>
                             </div>
                             <div class="timeline-body">
@@ -35,10 +38,11 @@
                     </li>
                     <li class="timeline-item">
                         <div class="timeline-badge danger"><i class="fa fa-hockey-puck"></i></div>
-                        <div class="timeline-panel">
+                        <div class="timeline-panel profilePic">
                             <div class="timeline-heading">
-                                <h4 class="timeline-title">Joined first Hockey Team</h4>
-                                <p><small class="text-muted"><i class="fa fa-hockey-puck"></i>2009</small></p>
+                                <h4 id="joinedHockey" class="timeline-title" (mouseover)="eventhandler($event)"
+                                    (mouseout)="handleLeave($event)">Joined first Hockey Team</h4>
+                                <p><small class="text-muted"><i class="far fa-calendar-alt"></i> 2009</small></p>
                             </div>
                             <div class="timeline-body">
                                 <p>Joined first hockey team playing at TBSA's In-House hockey league</p>
@@ -47,10 +51,11 @@
                     </li>
                     <li class="timeline-item">
                         <div class="timeline-badge info"><i class="fa fa-school"></i></div>
-                        <div class="timeline-panel">
+                        <div class="timeline-panel profilePic">
                             <div class="timeline-heading">
-                                <h4 class="timeline-title">East Lake High School</h4>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>August 2011</small>
+                                <h4 id="eastLake" class="timeline-title" (mouseover)="eventhandler($event)"
+                                    (mouseout)="handleLeave($event)">East Lake High School</h4>
+                                <p><small class="text-muted"><i class="far fa-calendar-alt"></i> August 2011</small>
                                 </p>
                             </div>
                             <div class="timeline-body">
@@ -61,10 +66,11 @@
                     </li>
                     <li class="timeline-item">
                         <div class="timeline-badge light"><i class="fa fa-university"></i></div>
-                        <div class="timeline-panel">
+                        <div class="timeline-panel profilePic">
                             <div class="timeline-heading">
-                                <h4 class="timeline-title">Attendeds Virginia Tech</h4>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> August
+                                <h4 id="virginiaTech" class="timeline-title" (mouseover)="eventhandler($event)"
+                                    (mouseout)="handleLeave($event)">Attendeds Virginia Tech</h4>
+                                <p><small class="text-muted"><i class="far fa-calendar-alt"></i> August
                                         2015</small></p>
                             </div>
                             <div class="timeline-body">
@@ -75,10 +81,11 @@
                     </li>
                     <li class="timeline-item">
                         <div class="timeline-badge success"><i class="fa fa-graduation-cap"></i></div>
-                        <div class="timeline-panel">
+                        <div class="timeline-panel profilePic">
                             <div class="timeline-heading">
-                                <h4 class="timeline-title">Graduates Virginia Tech</h4>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>May 2019</small>
+                                <h4 id="graduates" class="timeline-title" (mouseover)="eventhandler($event)"
+                                    (mouseout)="handleLeave($event)">Graduates Virginia Tech</h4>
+                                <p><small class="text-muted"><i class="far fa-calendar-alt"></i> May 2019</small>
                                 </p>
                             </div>
                             <div class="timeline-body">
@@ -88,10 +95,11 @@
                     </li>
                     <li class="timeline-item">
                         <div class="timeline-badge primary"><i class="fa fa-laptop-code"></i></div>
-                        <div class="timeline-panel">
+                        <div class="timeline-panel profilePic">
                             <div class="timeline-heading">
-                                <h4 class="timeline-title">Ventera Bulldogs</h4>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>August 2019</small>
+                                <h4 id="ventera" class="timeline-title" (mouseover)="eventhandler($event)"
+                                    (mouseout)="handleLeave($event)">Ventera Bulldogs</h4>
+                                <p><small class="text-muted"><i class="far fa-calendar-alt"></i> August 2019</small>
                                 </p>
                             </div>
                             <div class="timeline-body">
@@ -102,5 +110,8 @@
                     </li>
                 </ul>
             </div>
+        </div>
+        <div class="row" *ngIf="showMovedEvent">
+            <img src={{photoPath}} [ngStyle]="{'margin-left.%': photoStyle}" class="profilePic">
         </div>
     </div>

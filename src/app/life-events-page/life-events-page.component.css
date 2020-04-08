@@ -4,6 +4,11 @@
   height: 100%;
 }
 
+.profilePic {
+  border-radius: 8px !important;
+  height: 250px; width: auto;
+}
+
 /* Timeline */
 .timeline,
 .timeline-horizontal {

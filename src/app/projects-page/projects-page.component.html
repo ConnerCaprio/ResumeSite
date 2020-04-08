@@ -1,1 +1,70 @@
-<p>No fancy projects page but get ready for a mirror and go admire more of this dope site</p>
+<div class="row">
+    <div class="col-md-5 " style="height: 300px;">
+        <img class="image" src="assets/img/sinkcaddy.PNG" style="height: 80%;" id="movedEvent"
+            (mouseover)="eventhandler($event)" (mouseout)="handleLeave($event)">
+    </div>
+    <div class="col-md-7" style="margin: auto;">
+        <ul>
+            <li>
+                I 3D print shit
+            </li>
+        </ul>
+        <div class="row" *ngIf="showMovedEvent">
+            <p>woohoo it worked!</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-7" style="margin: auto;">
+        <ul>
+            <li>
+                Made an iOS app to help find pets to adopt named Man'sBestApp
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-5 " style="height: 300px;">
+        <img class="image" src="assets/img/dogApp1.PNG" style="height: 80%;">
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-md-5 " style="height: 300px;">
+        <img class="image" src="assets/img/gamejam1.PNG" style="height: 80%;">
+    </div>
+    <div class="col-md-7" style="margin: auto;">
+        <ul>
+            <li>
+                Made a 2D platformer during a Virginia Tech game jam
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-7" style="margin: auto;">
+        <ul>
+            <li>
+                Made a magic mirror that tells time, weather, date, time to get to work, and gives a time of day based
+                greeting
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-5 " style="height: 300px;">
+        <img class="image" src="assets/img/magic_mirror.png" style="height: 80%;">
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-md-5 " style="height: 300px;">
+        <video class="image" style="height: 80%; width: auto;" loop muted autoplay oncanplay="this.play()"
+            onloadedmetadata="this.muted = true">
+            <source src="assets/img/longboardProject.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="col-md-7" style="margin: auto;">
+        <ul>
+            <li>
+                Made a motorized longboard
+            </li>
+        </ul>
+    </div>
+</div>

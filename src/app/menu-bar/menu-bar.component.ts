@@ -13,8 +13,6 @@ export class MenuBarComponent implements OnInit {
   selected = 0;
 
   ngOnInit(): void {
-    console.log(this.router.url + ' hereeee');
-    console.log(window.location.href + 'thereesss');
 
     this.route = window.location.href;
     switch (this.route) {
